@@ -1,0 +1,511 @@
+﻿МІНІСТЕРСТВО ОСВІТИ І НАУКИ УКРАЇНИ
+
+
+ХАРКІВСЬКИЙ НАЦІОНАЛЬНИЙ
+УНІВЕРСИТЕТ РАДІОЕЛЕКТРОНІКИ
+
+
+Кафедра «Програмна інженерія»
+
+
+
+
+ЗВІТ
+до практичного заняття №1 з дисципліни
+«Архітектура програмного забезпечення»
+На тему: «Патерни проєктування»
+
+
+
+
+
+
+
+
+Виконала:
+ст. гр. ПЗПІ-22-4
+Тараненко Альона Ігорівна
+
+
+
+
+Прийняв:
+ст. викладач кафедри ПІ
+Сокорчук Ігор Петрович
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Харків 2025
+1 ІСТОРІЯ ЗМІН
+Таблиця 1 - Історія змін
+№
+	Дата
+	Версія звіту
+	Опис змін та виправлень
+	1
+	15.03.2025
+	0.1
+	Створено Google документ
+	2
+	16.03.2025
+	0.2
+	Створено основні текстові слайди для презентації (див. додаток Б)
+	3
+	18.03.2025
+	0.3
+	Створено код для презентації і відповідні слайди (див. додаток В, див. додаток Б)
+	4
+	22.03.2025
+	0.4
+	Створено відеозапис до презентації (див. додаток А)
+	5
+	23.03.2025
+	0.5
+	Створено фінальну версію звіту
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2 ЗАВДАННЯ
+1. Підготувати доповідь на тему: «Шаблон (патерн) проєктування ПЗ»
+(із книг: Ґамма, “ООП. Патерни проєктування”, GoF, крім патерна Singletone)
+2. Створити та оформити слайди презентації доповіді
+3. Створити та опублікувати на YouTube відеозапис доповіді
+4. Оформити та завантажити на dl.nure.ua звіт до виконаної роботи
+5. При потребі створити та налаштувати у GitHub обліковий запис для облікового запису студента в домені @nure.ua
+6. Створити для виконання завдань з дисципліни GitHub репозиторій iз вказаним на https://dl.nure.ua іменем та з головною гілкою main
+7. Створити у корені створеного репозиторію файл README.md з вказаним далі змістом та вказані далі директорії для окремих завдань
+8. Експортувати звіт у файл у простому текстововому форматі та завантажити цей файл у директорію Pract1 у репозиторії GitHub
+9. Завантажити у вказану далі піддиректорію увесь програмний код, який розглядається у доповіді ПЗ1
+
+
+3 ОПИС ВИКОНАНОЇ РОБОТИ
+        Для доповіді я обрала патерн проєктування «Стратегія».
+        Відеозапис до презентації розміщено на платформі YouTube та наведено в додатку А. Там же додано хронологічний опис.
+        В додатку Б наведено слайди презентації, що містять пояснення щодо поняття патерну, опис шаблону «Стратегія», його важливості, переваг та недоліків. Також наведено декілька практичних прикладів застосування патерну. Фрагменти наведеного в презентації програмного коду, містяться в додатку В.
+
+
+4 ВИСНОВКИ
+        В ході даного практичного заняття було ретельно досліджено патерни проєктування програмного забезпечення, зокрема шаблон «Стратегія», а також виконано доповідь на цю тему.
+
+
+
+
+
+
+ДОДАТОК А
+Відеозапис доповіді на YouTube: https://youtu.be/neempJ7Wyz4
+Хронологічний опис:
+00:00 Представлення
+00:15 Вступ
+00:39 Види патернів
+02:12 Патерн Startegy, визначення
+03:03 Структура патерну Strategy
+03:42 Приклад реалізації С++
+04:33 Приклад реалізації С#
+06:13 Переваги патерну
+07:42 Недоліки патерну
+09:06 Висновки
+10:25 Список використаних джерел
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ДОДАТОК Б
+  
+
+Рисунок Б.1 - Титульний слайд презентації
+  
+
+Рисунок Б.2 - пояснення терміну шаблонів проєктування
+  
+
+Рисунок Б.3 - Види патернів проєктування та приклади
+  
+
+Рисунок Б.4 - Заголовковий слайд розділу “Патерн Strategy”
+  
+
+Рисунок Б.5 - опис патерну Strategy
+  
+
+Рисунок Б.6 - заголовковий слайд розділу “Структура патерна Startegy”
+  
+
+Рисунок Б.7 - Ключові компоненти стратегії
+  
+
+Рисунок Б.8 - Пояснення до ключових компонентів стратегії
+  
+
+Рисунок Б.9 - Заголовковий слайд розділу “Приклад реалізації”
+  
+
+Рисунок Б.10 - Фрагмент коду зі створенням інтерфейсу стратегії
+  
+
+Рисунок Б.11 - Фрагменти коду зі створенням конкретних стратегій
+  
+
+Рисунок Б.12 - Фрагменти коду зі створенням контексту та використанням патерну
+  
+
+Рисунок Б.13 - Демонстрація роботи програми
+  
+
+Рисунок Б.14 - Фрагмент коду зі створенням інтерфейсу
+  
+
+Рисунок Б. 15 - Фрагменти коду зі створенням конкретних стратегій
+  
+
+Рисунок Б.16 - Фрагменти коду зі створенням контексту та використанням патерну
+  
+
+Рисунок Б.17 - Демонстрація роботи програми
+  
+
+Рисунок Б.18 - Заголовковий слайд розділу “Переваги та недоліки патерну Strategy”
+  
+
+Рисунок Б.19 - Переваги використання патерну “Strategy”
+  
+
+Рисунок Б.20 - Недоліки використання патерну “Strategy”
+  
+
+Рисунок Б.21 - Заголовковий слайд розділу “Висновки”
+  
+
+Рисунок Б.22 - Висновки щодо проведеного дослідження
+  
+
+Рисунок Б.23 - Список використаних джерел
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ДОДАТОК В
+Файл draft1.cpp
+ 1  #include <iostream>
+ 2  #include <vector>
+ 3  #include <algorithm>
+ 4  
+ 5  // Інтерфейс стратегії
+ 6  class SortingStrategy {
+ 7  public:
+ 8      virtual void sort(std::vector<int>& data) = 0;
+ 9      virtual ~SortingStrategy() = default;
+10  };
+11  
+12  // Реалізація стратегії: BubbleSort
+13  class BubbleSort : public SortingStrategy {
+14  public:
+15      void sort(std::vector<int>& data) override {
+16          std::cout << "Sorting by BubbleSort\n";
+17          for (size_t i = 0; i < data.size() - 1; ++i) {
+18              for (size_t j = 0; j < data.size() - i - 1; ++j) {
+19                  if (data[j] > data[j + 1]) {
+20                      std::swap(data[j], data[j + 1]);
+21                  }
+22              }
+23          }
+24      }
+25  };
+26  
+27  // Реалізація стратегії: QuickSort
+28  class QuickSort : public SortingStrategy {
+29  public:
+30      void sort(std::vector<int>& data) override {
+31          std::cout << "QuickSort\n";
+32          quickSort(data, 0, data.size() - 1);
+33      }
+34  
+35  private:
+36      void quickSort(std::vector<int>& data, int left, int right) {
+37          if (left < right) {
+38              int pivot = partition(data, left, right);
+39              quickSort(data, left, pivot - 1);
+40              quickSort(data, pivot + 1, right);
+41          }
+42      }
+43  
+44      int partition(std::vector<int>& data, int left, int right) {
+45          int pivot = data[right];
+46          int i = left - 1;
+47          for (int j = left; j < right; j++) {
+48              if (data[j] < pivot) {
+49                  i++;
+50                  std::swap(data[i], data[j]);
+51              }
+52          }
+53          std::swap(data[i + 1], data[right]);
+54          return i + 1;
+55      }
+56  };
+57  
+58  // Контекст
+59  class SortContext {
+60  private:
+61      SortingStrategy* strategy;
+62  public:
+63      void setStrategy(SortingStrategy* strat) {
+64          strategy = strat;
+65      }
+66      void executeStrategy(std::vector<int>& data) {
+67          if (strategy) {
+68              strategy->sort(data);
+69          }
+70      }
+71  };
+72  
+73  // Головна функція
+74  int main() {
+75      std::vector<int> numbers = { 5, 3, 8, 1, 2 };
+76      SortContext context;
+77  
+78      // Використання BubbleSort
+79      BubbleSort bubble;
+80      context.setStrategy(&bubble);
+81      context.executeStrategy(numbers);
+82      for (int num : numbers) std::cout << num << " ";
+83      std::cout << "\n";
+84  
+85      // Використання QuickSort
+86      numbers = { 5, 3, 8, 1, 2 };
+87      QuickSort quick;
+88      context.setStrategy(&quick);
+89      context.executeStrategy(numbers);
+90      for (int num : numbers) std::cout << num << " ";
+91      std::cout << "\n";
+92  
+93      return 0;
+94  }
+
+
+
+
+Файл program.cs
+ 1  // Інтерфейс для стратегії
+ 2  public interface IPaymentStrategy
+ 3  {
+ 4      void Pay(decimal amount);
+ 5  }
+ 6  
+ 7  // Конкретна стратегія: оплата кредитною карткою
+ 8  public class CreditCardPayment : IPaymentStrategy
+ 9  {
+10      private string _cardNumber;
+11  
+12      public CreditCardPayment(string cardNumber)
+13      {
+14          _cardNumber = cardNumber;
+15      }
+16  
+17      public void Pay(decimal amount)
+18      {
+19          Console.WriteLine($"Paid {amount} UAH using credit card {_cardNumber}.");
+20      }
+21  }
+22  
+23  // Конкретна стратегія: оплата через PayPal
+24  public class PayPalPayment : IPaymentStrategy
+25  {
+26      private string _email;
+27  
+28      public PayPalPayment(string email)
+29      {
+30          _email = email;
+31      }
+32  
+33      public void Pay(decimal amount)
+34      {
+35          Console.WriteLine($"Paid {amount} UAH via PayPal account {_email}.");
+36      }
+37  }
+38  
+39  // Конкретна стратегія: оплата криптовалютою
+40  public class CryptoPayment : IPaymentStrategy
+41  {
+42      private string _walletAddress;
+43  
+44      public CryptoPayment(string walletAddress)
+45      {
+46          _walletAddress = walletAddress;
+47      }
+48  
+49      public void Pay(decimal amount)
+50      {
+51          Console.WriteLine($"Paid {amount} UAH in cryptocurrency to wallet {_walletAddress}.");
+52      }
+53  }
+54  
+55  // Контекст
+56  public class PaymentContext
+57  {
+58      private IPaymentStrategy _paymentStrategy;
+59  
+60      public void SetPaymentStrategy(IPaymentStrategy paymentStrategy)
+61      {
+62          _paymentStrategy = paymentStrategy;
+63      }
+64  
+65      public void ProcessPayment(decimal amount)
+66      {
+67          if (_paymentStrategy == null)
+68          {
+69              throw new InvalidOperationException("Payment strategy is not set.");
+70          }
+71  
+72          _paymentStrategy.Pay(amount);
+73      }
+74  }
+75  
+76  // Головна функція
+77  class Program
+78  {
+79      static void Main()
+80      {
+81          var context = new PaymentContext();
+82  
+83          context.SetPaymentStrategy(new CreditCardPayment("1234-5678-9012-3456"));
+84          context.ProcessPayment(1000);
+85  
+86          context.SetPaymentStrategy(new PayPalPayment("user@example.com"));
+87          context.ProcessPayment(500);
+88  
+89          context.SetPaymentStrategy(new CryptoPayment("1A2b3C4d5E6f7G8h9I0J"));
+90          context.ProcessPayment(3000);
+91      }
+92  }
